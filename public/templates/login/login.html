@@ -1,0 +1,29 @@
+ 
+
+<div class = "container" ng-controller="loginController" ng-keydown="keyDown($event)">
+	<div class="wrapper">
+		<form action=""  name="Login_Form" class="form-signin" >       
+		    <h3 class="form-signin-heading"> מערכת ניהול ספקים </h3>
+			  <hr class="colorgraph"><br>
+			  
+			  <input type="text" class="form-control" name="Username" id="Username" ng-model="loginSupplier.username" placeholder="שם משתמש" required="" autofocus="" />
+			  <input type="password" class="form-control" name="Password" id="Password" ng-model="loginSupplier.password" placeholder="סיסמה" required=""/>     		  
+			 
+			  <button class="btn btn-lg btn-primary btn-block"  ng-click="validateUser()" type="button"  >כניסה</button> </br>
+			  
+		</form>	
+
+			<div class="alert form-signin bg-warning">
+				<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+				  שם משתמש או סיסמה אינם תקינים  
+			</div>	
+			<div class="warning form-signin bg-warning">
+				<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+				  נא לכתוב שם משתמש וסיסמה
+			</div>
+
+		
+	</div>
+</div>
+
+ 

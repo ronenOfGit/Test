@@ -1,0 +1,63 @@
+
+body { padding-top:20px; }
+.panel-body .btn:not(.btn-block) { width:120px;margin-bottom:10px; }
+
+.jumbotron{
+	 border: 3px dotted rgba(0,0,0,0.1); 
+	 padding-top:5px;
+}
+
+.btn-lg{
+	width:90%;
+	margin:0px auto;
+}
+
+.panel-primary{
+	min-height:270px;
+}
+
+.btn-purple{
+	background-color: #9757b2;
+	color: white;
+}
+.btn:hover{
+	color:black;
+}
+
+.btn-green{
+	background-color: #54b798;
+	color: white;
+}
+
+.table{
+	background-color: white;
+	margin-top:20px;
+}
+
+tr:hover {background-color: #E2DEDE;}
+
+th, label{
+	color:#337ab7;
+}
+ 
+ .pagination{
+	 margin-bottom:5px;
+ }
+ 
+  
+ .newform{
+	 direction: rtl;
+ }
+ .wrapperfrm{
+	 width:60%;
+	 margin:0px auto;
+	 min-width:320px;	
+	 margin-top:-20px;
+	 padding:10px;
+ }
+ 
+ .centerdiv{
+	 text-align:center;
+ }
+ 
+ 

@@ -1,0 +1,34 @@
+ 
+ 
+<div class = "container"> 
+ <div class="jumbotron">
+	 
+	<admin-menu></admin-menu>
+ 
+	<h2 class="text-right"> רשימת ספקים </h2>
+	 
+	 <table class="table">
+	 <thead>
+	  <tr>
+	    <th>ערוך</th>
+		<th>שם משתמש</th>
+		<th>טלפון</th>
+		<th>איש קשר</th>
+		<th>שם ספק</td>
+		<th>מספר ספק</th>
+	  </tr>
+	  </thead>
+	  
+	  <tr ng-repeat = "supplier in suppliers[0]">
+		<td><a ng-href="#!/suppliers/edit/{{supplier.id}}" class="btn btn-warning">עריכה</a></td>	
+		<td>{{supplier.username}}</td>
+		<td>{{supplier.phone}}</td>
+		<td>{{supplier.contact}}</td>
+		<td>{{supplier.name}}</td>
+		<td>{{supplier.id}}</td>
+	  </tr>
+	</table>
+	
+ </div>
+
+</div>

@@ -1,0 +1,58 @@
+ 
+ 
+<div class = "container" ng-controller="newSupplierController as newCtrl">
+ <div class="jumbotron">
+ 
+	<admin-menu></admin-menu>
+
+	<div class="wrapperfrm">
+	
+	   <h2 class="text-right"> הקמת ספק </h2>
+		
+		
+	  <form class="newform" name="supplierForm" ng-submit="insertSupplier()"  >
+	  	  
+		  <div class="form-group">
+			<label for="Name">שם הספק</label>
+			<input type="text" class="form-control" id="Name"  placeholder="Name" ng-model="aSupplier.name" required >
+		  </div>
+		  
+		   <div class="form-group">
+			<label for="Contact">איש קשר</label>
+			<input type="text" class="form-control" id="Contact" placeholder="Contact" ng-model="aSupplier.contact" >
+		  </div>
+		  
+		  <div class="form-group">
+			<label for="Phone">טלפון</label>
+			<input type="text" class="form-control" id="Phone" placeholder="Phone" ng-model="aSupplier.phone" required>
+		  </div>
+		  
+		   <div class="form-group">
+			<label for="Username">שם משתמש</label>
+			<input type="text" class="form-control" id="Username" placeholder="Username" ng-model="aSupplier.username" required >
+		  </div>
+		  
+		  <div class="form-group">
+			<label for="Password">סיסמה</label>
+			<input type="password" class="form-control" id="Password" placeholder="Password" ng-model="aSupplier.password" required >
+		  </div>
+		  
+			<div class="checkbox">
+				<label><input type="checkbox" value="" ng-model="aSupplier.isadmin" > &nbsp;&nbsp;&nbsp; מנהל מערכת</label>
+			</div>
+		   
+		  <button class="btn  btn-primary"  type="submit" > שמור ספק </button> </br>
+			  
+		</form>
+		
+		<div class="warning form-signin bg-warning">
+				<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+				  נא למלא שדות חובה
+		</div>
+			
+			
+	</div>
+	
+ </div>
+
+</div>

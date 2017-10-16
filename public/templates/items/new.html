@@ -1,0 +1,49 @@
+ 
+ 
+<div class = "container" ng-controller="newItemController">
+ <div class="jumbotron">
+ 
+	<user-menu></user-menu>
+
+	<div class="wrapperfrm">
+	
+	   <h2 class="text-right"> הקמת פריט </h2>
+		
+		
+	  <form class="newform" name="itemForm" ng-submit="insertItem()"  >
+	  	  
+		  <div class="form-group">
+			<label for="Name">שם הפריט</label>
+			<input type="text" class="form-control" id="Name"  placeholder="Name" ng-model="aItem.name" required >
+		  </div>
+		  
+		   <div class="form-group">
+			<label for="Contact">מחיר עלות</label>
+			<input type="text" class="form-control" id="Cost" placeholder="Cost Price" ng-model="aItem.cost_price" required>
+		  </div>
+		  
+		  <div class="form-group">
+			<label for="Phone">מחיר מומלץ לצרכן</label>
+			<input type="text" class="form-control" id="Recommended" placeholder="Recommended Price" ng-model="aItem.recommended" required>
+		  </div>
+		   	  
+		   
+		  <button class="btn  btn-primary"  type="submit" >  שמור פריט </button> </br>
+			  
+		</form>
+		
+		<div class="warning form-signin bg-warning">
+				<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+				  נא למלא שדות חובה
+		</div>
+		<div class="warning2 form-signin bg-warning">
+				<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+				  ערך לא חוקי בשדה מחיר
+		</div>
+			
+			
+	</div>
+	
+ </div>
+
+</div>
