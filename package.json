@@ -1,0 +1,25 @@
+{
+  "name": "catalog",
+  "version": "1.0.0",
+  "description": "Suppliers task",
+  "main": "api.js",
+  "dependencies": {
+    "express": "^4.15.5",
+    "express-session": "^1.15.6",
+    "sqlite3": "^3.1.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronenOfGit/AngularJS-Task.git"
+  },
+  "author": "Ronen Ofir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ronenOfGit/AngularJS-Task/issues"
+  },
+  "homepage": "https://github.com/ronenOfGit/AngularJS-Task#readme"
+}
