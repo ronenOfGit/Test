@@ -34,8 +34,8 @@ suppliersApp.controller('supplierEditController', ['$scope','$http','$routeParam
 			$http({
 				url: '/suppliers/update/', 
 				method: "put",
-				params: {pname: $scope.aSupplier.name, pphone: $scope.aSupplier.contact,
-							pcontact: $scope.aSupplier.phone, pusername: $scope.aSupplier.username, ppassword: $scope.aSupplier.password, pisadmin: $scope.aSupplier.isadmin ,sid: $routeParams.sid}
+				params: {pname: $scope.aSupplier.name, pphone: $scope.aSupplier.phone,
+							pcontact: $scope.aSupplier.contact, pusername: $scope.aSupplier.username, ppassword: $scope.aSupplier.password, pisadmin: $scope.aSupplier.isadmin ,sid: $routeParams.sid}
 			}).then(function(response){
 			
 			});
